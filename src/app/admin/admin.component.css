@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+	background-image: url('src\assets\images\airplane.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #191a1e;
+}
+div{
+    margin-top: 45vh;
+    margin-left: 35%;
+}
+.viewflights{
+    margin-right: 50px;
+    padding: 15px;
+    width: 20%;
+}
+.addflights{
+    margin-right: 50px;
+    padding: 15px;
+    width: 20%;
+}
+.deleteflights{
+    margin-right: 50px;
+    padding: 15px;
+    width: 20%;
+}

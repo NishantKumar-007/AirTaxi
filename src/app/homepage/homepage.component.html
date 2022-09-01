@@ -1,0 +1,81 @@
+
+ 
+   <div class="header mt-5 mb-5">
+      <h1>Book Your Flight Today </h1>
+   </div>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="checkboxes">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">One Way</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Roundtrip</label>
+          </div>
+        
+        </div>
+      <div class="row">
+        <div class="form-group col">
+          <label for="inputEmail4">FLYING FROM </label>
+          <input type="text" class="form-control" id="inputSrc" placeholder="Enter City or Airport" formControlName="source">
+        </div>
+        <div class="form-group col">
+          <label for="inputPassword4">FLYING TO</label>
+          <input type="text" class="form-control" id="inputDest" placeholder="Enter City or Airport" formControlName="destination">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label for="inputAddress">DATE OF DEPARTURE</label>
+          <input type="date" class="form-control" id="inputAddress" placeholder="DD-MM-YYYY" formControlName="dod">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label for="inputAddress2">DATE OF RETURN</label>
+          <input type="date" class="form-control" id="inputAddress2" placeholder="DD-MM-YYYY" formControlName="doa">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col">
+            <label for="inputState">ADULT</label>
+            <select id="inputState" class="form-control">
+              <option selected>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+        <div class="form-group col">
+          <label for="inputState">CHILDREN</label>
+          <select id="inputState" class="form-control">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+          </select>
+        </div>
+        <div class="form-group col">
+          <label for="inputZip">CLASS</label>
+          <select formControlName="type" id="inputState" class="form-control">
+            <option selected>Economy</option>
+            <option>Business</option>
+            
+            
+      </select>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-outline-primary btn-lg btn-block position-relative">SEARCH FLIGHTS</button>
+      </div>
+      
+    </form>
+
+    <!-- //[routerLink]="[ '/detailView',list.id]"> -->
+    <!-- ngOnInit() { this.sub = this.route.params.subscribe(params => { this.id = params['id']; }); console.log(this.id); } -->
+    
+
+  

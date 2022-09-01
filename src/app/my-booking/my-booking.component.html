@@ -1,0 +1,44 @@
+<h2 style="margin-left: 20px;"><b> MYBOOKING</b></h2>
+ <table class="table" style="margin-top: 50px;">
+    
+    
+    <thead class="table-primary">
+   
+        <tr>
+            <!-- <th>booking_id</th> -->
+            <th>passengerName</th>
+            <th>seat</th>
+            <th>age</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>flightName</th>
+            <th>Amount</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Action</th>
+           
+        </tr>
+    </thead>
+    <tbody >
+        
+        <tr *ngFor="let row of details">
+            <!-- <td >{{row.id}}</td> -->
+            <td>{{row.PassengerName}}</td>
+            <td>{{row.seatNo}}</td>
+            <td>{{row.age}}</td>
+            <td>{{row.departTime}}</td>
+            <td>{{row.arrivalTime}}</td>
+            <td>{{row.flightName}}</td>
+            <td>{{row.amount}}</td>
+            <td>{{row.source}}</td>
+            <td>{{row.destination}}</td>
+            <td>
+                <button  class="btn btn-danger" style="width:100%;" (click)="cancelTicket(row)">Cancel Ticket</button>
+            </td>
+
+        </tr>            
+    </tbody>
+</table> 
+
+
+

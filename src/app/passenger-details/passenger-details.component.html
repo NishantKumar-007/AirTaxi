@@ -1,0 +1,48 @@
+
+<body>
+    
+    <div class="container">
+        <div class="title">Passenger Details</div>
+      <form  (ngSubmit)="onSubmit()">
+        <div class="user-details" *ngFor="let obj of passarray; let i=index">
+
+                 
+
+               <div class="form-group" style= "color: #47B5FF;">
+               <label for="firstName">Passenger Name</label>
+               <input type="text" id="passengerName"  class = "form-control" placeholder="Your Name..."  required="" name="passengerName{{i}}" [(ngModel)]="obj.passengerName" pattern="\d{2}" >   
+                </div>
+                
+                
+               <div class="form-group" style= "color: #47B5FF;">
+              
+                <label for="lastName">Passenger Age</label>
+                <input  class = "form-control" type="number" required="" placeholder="Your Age..."  name="age{{i}}" [(ngModel)]="obj.age"> 
+               </div>
+               
+               <div class="form-group" *ngIf="i!=0" >
+                <span type="button"  class="button" style="padding: 5px 20px ; background-color: crimson;" (click)="removeForm(i)">Remove</span>
+                <!-- <button class="button" (click)="removeForm(i)">Remove</button> -->
+            </div>
+               
+            </div>
+
+            <div class="form-group">
+                <span type="button"   class="button" (click)="addForm()">Add</span>
+            </div>
+   
+               <button class="button">Submit</button>
+            
+
+
+    </form>
+      </div>
+      
+
+</body>
+
+
+
+
+
+

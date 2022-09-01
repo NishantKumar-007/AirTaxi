@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form </title>
+    <link rel="stylesheet" type="text/css" href="registration.component.css">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">Register Here</div>
+      <form  [formGroup]="userForm" (ngSubmit)="onSubmit()"  (keydown.enter)="$event.preventDefault()" novalidate >
+        <div class="user-details">
+
+                 <div class="form-group" style= "color: #47B5FF;">
+                 <label for="title">Title</label>
+                     <select name="Title" formControlName="title" type="text"
+                     style="width: 100%; height: 30px; outline: none; border-radius: 5px;border: 1px solid #ccc; padding-left: 15px;font-size: 16px;border-bottom-width: 2px;transition: all 0.3s ease;">
+                       <option>Select Title</option>
+                       <option>Mr.</option>
+                       <option>Ms.</option>
+                       <option>Mrs.</option> 
+                    </select>
+                </div>  
+
+               <div class="form-group" style= "color: #47B5FF;">
+                <label for="firstName">FirstName</label>
+                     <input type="text" id="firstName"  class = "form-control" placeholder="Enter Your First Name" formControlName="firstName" required="" >
+                     <div *ngIf="f['firstName'].touched && f['firstName'].invalid" class="alert alert-danger">
+                        <div *ngIf="f['firstName'].errors && f['firstName'].errors['required']">FirstName is required!</div>
+                        <div *ngIf="f['firstName'].errors && f['firstName'].errors['pattern']">Enter alphabets only</div>
+                    </div>
+                </div>
+                
+                
+               <div class="form-group" style= "color: #47B5FF;">
+                <label for="lastName">LastName</label>
+                <input  class = "form-control" type="text" required="" placeholder="Enter Your Last Name" formControlName="lastName">
+                    <div *ngIf="f['lastName'].touched && f['lastName'].invalid" class="alert alert-danger">
+                        <div *ngIf="f['lastName'].errors && f['lastName'].errors['required']">LastName is required!</div>
+                        <div *ngIf="f['lastName'].errors && f['lastName'].errors['pattern']">Enter alphabets only</div>
+                    </div>
+               </div>
+
+                <div class="form-group" style= "color: #47B5FF;">
+                    <label for="email_Id">Email-Id</label>
+                    <input  required class = "form-control" type="email" required placeholder="Enter your Email-Id" formControlName="email_Id" >
+                    <div *ngIf="f['email_Id'].touched && f['email_Id'].invalid" class="alert alert-danger">
+                        <div *ngIf="f['email_Id'].errors && f['email_Id'].errors['email']">Enter proper email id</div>
+                        <div *ngIf="f['email_Id'].errors && f['email_Id'].errors['required']">Email id is required!</div>
+                    </div>
+                 
+                </div>
+
+                <div class="form-group" style= "color: #47B5FF;">
+                    <label for="password">Password</label>
+                
+                    <input  class = "form-control" type="password" required="" placeholder="Enter Your Password" formControlName="password" id="txtPassword" >
+                 
+                    <div *ngIf="f['password'].touched && f['password'].invalid" class="alert alert-danger">
+                        <div *ngIf="f['password'].errors && f['password'].errors['required']">Password is Required!</div>
+                    </div>
+                </div>
+
+                <div class="form-group" style= "color: #47B5FF;">
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input required="" class = "form-control" type="password"  placeholder="Confirm Your Password"  formControlName="confirmpassword" id="txtConfirmPassword" >
+                
+                    <div *ngIf="f['confirmpassword'].touched && f['confirmpassword'].invalid" class="alert alert-danger">
+                        <div *ngIf="f['confirmpassword'].errors && f['confirmpassword'].errors['required']">Confirm Your Password!</div>
+                       
+                    </div>
+                </div>
+ 
+               
+                <div class="form-group" style= "color: #47B5FF;" >
+                    <label for="dob">Birthdate</label>
+                    <input required="" class = "form-control" type="date" required placeholder="Select Your Birthdate"  formControlName="dob" >
+                    <div *ngIf="f['dob'].touched && f['dob'].invalid" class="alert alert-danger">
+                        <div *ngIf="f['dob'].errors && f['dob'].errors['required']"> DOB is required!</div>
+                    </div>
+                </div>
+
+                <div class="form-group" style= "color: #47B5FF;">
+                    <label for="mobile_No">Mobile Number</label>
+                    <input  type="number" maxlength="10" pattern="[7-9]{1}[0-9]{9}" placeholder="Enter Your Phone No" formControlName="mobile_No" >
+                    <div *ngIf="f['mobile_no'].touched && f['mobile_no'].invalid" class="alert alert-danger">
+                        <div *ngIf="f['mobile_no'].errors && f['mobile_no'].errors['required']">mobile_no is required!</div>
+                        <div *ngIf="f['mobile_no'].errors && f['mobile_no'].errors['pattern']">Enter 10 digit no</div>
+                    </div>
+             
+                </div>
+
+              <button type="button" class="button" (click)="onCancel()">CANCEL</button> 
+                <button type="submit" class="button" (click)="onRegister()" [disabled]="!userForm.valid">REGISTER</button>
+                
+               
+            </div>
+    </form>
+      </div>
+      
+
+</body>
+
+
+</html>

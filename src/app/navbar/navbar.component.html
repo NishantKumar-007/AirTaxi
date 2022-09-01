@@ -1,0 +1,31 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+  
+    <a routerLink="/">
+      <img  class="img-responsive" src="assets/images/website-logo.png" alt="" width="100">
+    </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="navbar-brand" routerLink="/" >Home</a>
+        </li>
+        <li class="nav-item" id="login">
+          <a class="navbar-brand"  routerLink="login" id="login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand"  routerLink="registration">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand"  routerLink="myBooking">My Booking </a>
+        </li>
+        <li class="nav-item" id="logout">
+          <a (click)="onLogout()" class="navbar-brand" routerLink=""  id="logout">Logout </a>
+        </li>
+      </ul>
+    </div>
+  </nav>

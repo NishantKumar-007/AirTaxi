@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Muli'><link rel="stylesheet" href="viewflights.component.css">
+  
+</head>
+<body>
+    <div class="viewflights">
+    <table class="table table-hover mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Flight ID</th>
+            <th scope="col">Flight Name</th>
+            <th scope="col">Capacity</th>
+            <th scope="col">From</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Depart Time</th>
+            <th scope="col">Arrive Time</th>
+            <th scope="col">Economy Price (Rs)</th>
+            <th scope="col">Business Price (Rs)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let f of flightList">
+            <td>{{f.flight_id}}</td>
+            <td>{{f.flightName}}</td>
+            <td>{{f.capacity}}</td>
+            <td>{{f.source}}</td>
+            <td>{{f.destination}}</td>
+            <td>{{f.departureTime}}</td>
+            <td>{{f.arrivalTime}}</td>
+            <td>{{f.economyPrice}}</td>
+            <td>{{f.businessPrice}}</td>
+            <td><button class="btn btn-warning" style="margin-left: 20px;" (click)="editFlights(f)">Edit</button></td>
+            <td><button class="btn btn-warning" style="margin-left: 20px;" (click)="deleteFlights(f)">Delete</button></td>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+	background-image: url("src\assets\images\airplane.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #191a1e;
+}
+
+.container{
+    position: relative;
+	background: #fff;
+    height: fit-content;
+	max-width: 600px;
+	width: 200%;
+	margin: auto;
+	padding: 30px 30px 25px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+
+}
+.container .title{
+    background: #47B5FF;
+    padding: 15px;
+    color: #191a1e;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+   
+}
+
+  
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+form .user-details .form-group{
+    margin: 20px 0 12px 0;
+    width: calc(100% / 4- 20px);
+    
+}
+
+
+.form-group .errormessage{
+    color: red;
+
+}
+
+.user-details .form-group .details{
+    display:block;
+    font-weight: 10;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+    color: #47B5FF;
+    
+}
+.user-details .form-group input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+
+
+form .button{
+    background-color: #47B5FF;
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    
+
+}
+form .button:hover{
+opacity: 0.8;
+   
+}
+
+
+
+@media(max-width:998px){
+    .container{
+        width: calc(100vw - 35vw);
+        max-width: 100%;
+    }
+
+}
+    

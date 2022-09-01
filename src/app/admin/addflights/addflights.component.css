@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+	background-size: cover;
+	background-position: center;
+	color: #191a1e;
+}
+.form-style{
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+input{
+	width: 300px;
+	margin-right: 80px; 
+	margin-bottom: 30px ;
+	margin-left: 50px;
+}
+
+   

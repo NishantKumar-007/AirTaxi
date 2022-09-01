@@ -1,0 +1,16 @@
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .flightcard {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  }
+img{
+    width: 50px;
+}
+img#plane{
+    width: 80px;
+}
+.flightcard{
+    background-color: rgba(245, 245, 245, 0.623);   
+    
+}

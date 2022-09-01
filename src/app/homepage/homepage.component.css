@@ -1,0 +1,28 @@
+
+  .checkboxes{
+    margin-left: 2rem;
+  }
+
+
+  form{
+	background: whitesmoke;
+  margin: 0px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  /* width: 40rem; */
+  /* position: absolute; */
+  }
+
+  .header h1{
+    font-family: 'Qwitcher Grypen', cursive;
+    font-weight: 700;
+    color: antiquewhite;
+    font-size:100px;
+    
+  }
+
+
+ .row{
+  margin: 10px;
+ }

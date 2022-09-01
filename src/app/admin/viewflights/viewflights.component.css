@@ -1,0 +1,18 @@
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+	background-size: cover;
+	background-position: center;
+	color: #191a1e;
+}
+
+.viewflights{
+    margin-left: 10px;
+    
+    width: 100%;
+}

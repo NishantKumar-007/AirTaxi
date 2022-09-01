@@ -1,0 +1,156 @@
+{
+  "flight-details": [
+    {
+      "fid": "1",
+      "source": "Bengaluru",
+      "destination": "Mumbai",
+      "economy_price": "4000",
+      "business_price": "33000",
+      "flight": "Indigo",
+      "type": "economy",
+      "arrival_time": "6:30 PM",
+      "departure_time": "8:30 PM",
+      "capacity": "60"
+    },
+    {
+      "fid": "2",
+      "src": "Delhi",
+      "dest": "Chennai",
+      "economy_price": "4000",
+      "business_price": "33000",
+      "flight": "Indigo",
+      "type": "economy",
+      "arrival_time": "6:30 PM",
+      "departure_time": "8:30 AM",
+      "capacity": "60"
+    },
+    {
+      "fid": "3",
+      "src": "Delhi",
+      "dest": "Chennai",
+      "economy_price": "4000",
+      "business_price": "33000",
+      "flight": "Indigo",
+      "type": "economy",
+      "arrival_time": "6:30 PM",
+      "departure_time": "8:30 PM",
+      "capacity": "60"
+    },
+    {
+      "fid": "4",
+      "src": "Bengaluru",
+      "dest": "Chennai",
+      "economy_price": "4000",
+      "business_price": "33000",
+      "flight": "Indigo",
+      "type": "economy",
+      "arrival_time": "6:30 PM",
+      "departure_time": "8:30 AM",
+      "capacity": "60"
+    }
+  ],
+  "users": [
+    {
+      "email": "nishant@gmail.com",
+      "password": "123"
+    },
+    {
+      "email": "nikhil@gmail.com",
+      "password": "456"
+    },
+    {
+      "email": "pooja@gmail.com",
+      "password": "789"
+    },
+    {
+      "email": "avina@gmail.com",
+      "password": "007"
+    },
+    {
+      "email": "abc",
+      "password": "123"
+    }
+  ],
+  "payment": [
+    {}
+  ],
+  "BookingDetails": [
+    {
+      "id": 1,
+      "amount": "45000",
+      "flight": "Indigo",
+      "seat": "6A",
+      "email": "nishant@gmail.com"
+    },
+    {
+      "amount": "Rs 4000",
+      "flight": "1Indigo",
+      "seat": "3D",
+      "id": 2,
+      "email": "nishant@gmail.com"
+    },
+    {
+      "amount": "Rs 4000",
+      "flight": "1Indigo",
+      "seat": "5B",
+      "source": "Bengaluru",
+      "dest": "Mumbai",
+      "arrivalTime": "6:30 PM",
+      "departTime": "8:30 PM",
+      "id": 5,
+      "email": "pooja@gmail.com"
+    },
+    {
+      "amount": "Rs 4000",
+      "flight": "1Indigo",
+      "seat": "7B",
+      "source": "Bengaluru",
+      "dest": "Mumbai",
+      "arrivalTime": "6:30 PM",
+      "departTime": "8:30 PM",
+      "age": "",
+      "name": "",
+      "id": 7,
+      "email": "nishant@gmail.com"
+    },
+    {
+      "amount": "Rs 33000",
+      "flight": "1Indigo",
+      "seat": "1E",
+      "source": "Bengaluru",
+      "dest": "Mumbai",
+      "arrivalTime": "6:30 PM",
+      "departTime": "8:30 PM",
+      "age": "23",
+      "name": "avina",
+      "email": "abc",
+      "id": 10
+    },
+    {
+      "amount": "Rs 4000",
+      "flight": "1Indigo",
+      "seat": "5B",
+      "source": "Bengaluru",
+      "dest": "Mumbai",
+      "arrivalTime": "6:30 PM",
+      "departTime": "8:30 PM",
+      "age": "22",
+      "name": "Nishant",
+      "email": null,
+      "id": 11
+    },
+    {
+      "amount": "Rs 4000",
+      "flight": "1Indigo",
+      "seat": "5B",
+      "source": "Bengaluru",
+      "dest": "Mumbai",
+      "arrivalTime": "6:30 PM",
+      "departTime": "8:30 PM",
+      "age": "45",
+      "name": "dravid",
+      "email": "abc",
+      "id": 13
+    }
+  ]
+}
