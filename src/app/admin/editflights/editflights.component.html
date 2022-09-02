@@ -19,6 +19,9 @@
         </label>
         <input type="text" style="margin-left: 99px;" placeholder="Enter Flight name" formControlName="flightName" required>
       </div>
+      <span class="text-danger" *ngIf="flightForm.controls['flight_id'].dirty && flightForm.hasError('required','flight_id')">*Please Enter Flight ID</span>
+      <span class="text-danger" style="margin-left: 480px;" *ngIf="flightForm.controls['flightName'].dirty && flightForm.hasError('required','flightName')">*Please Enter Flight Name</span>
+         
       
       <div class="box">        
         <label for="capacity">
@@ -31,6 +34,9 @@
         </label>
         <input type="number" style="margin-left: 78px;" placeholder="Economy Price" formControlName="economyPrice" required>
       </div>
+      <span class="text-danger" *ngIf="flightForm.controls['capacity'].dirty && flightForm.hasError('required','capacity')">*Please Enter Capacity</span>
+      <span class="text-danger" style="margin-left: 480px;" *ngIf="flightForm.controls['economyPrice'].dirty && flightForm.hasError('required','economyPrice')">*Please Enter Economy Price</span>
+         
       
       <div class="box">
         <label for="businessPrice">
@@ -44,6 +50,9 @@
         <input type="text" style="margin-left: 77px;" placeholder="Departure Time" formControlName="departureTime" required>
         
       </div>
+      <span class="text-danger" *ngIf="flightForm.controls['businessPrice'].dirty && flightForm.hasError('required','businessPrice')">*Please Enter Business Price</span>
+      <span class="text-danger" style="margin-left: 440px;" *ngIf="flightForm.controls['departureTime'].dirty && flightForm.hasError('required','departureTime')">*Please Enter Departure Time</span>
+
 
       <div class="box">
         <label for="arriveTime">
@@ -57,6 +66,9 @@
         <input type="text" style="margin-left: 135px;" placeholder="Source" formControlName="source" required>
         
       </div>
+      <span class="text-danger" *ngIf="flightForm.controls['arrivalTime'].dirty && flightForm.hasError('required','arrivalTime')">*Please Enter Arrival Time</span>
+      <span class="text-danger" style="margin-left: 460px;" *ngIf="flightForm.controls['source'].dirty && flightForm.hasError('required','source')">*Please Enter Source</span>
+
 
       <div class="box">
         <label for="Destination">
@@ -64,9 +76,11 @@
         </label>
         <input type="text" style="margin-left: 75px;"   placeholder="Destination" formControlName="destination" required>
       </div>
+      <span class="text-danger" *ngIf="flightForm.controls['destination'].dirty && flightForm.hasError('required','destination')">*Please Enter Destination</span>
+
       
       <div class="box">
-        <input type="submit" style="margin-left: 0px;" value="Submit" id="btn">
+        <input type="submit" style="margin-left: 0px;" value="Submit" [disabled]="!flightForm.valid" id="btn">
       </div>
   </form>
  </body>

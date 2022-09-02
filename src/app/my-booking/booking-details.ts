@@ -6,9 +6,10 @@ export class BookingDetails {
     source :string|null;
     destination :string|null;
     arrivalTime :string|null;
-    departTime :string|null;
+    departureTime :string|null;
     age:string|null;
-    PassengerName:string|null;
+    passengerName:string|null;
     email_Id:string|null;
+    bookingDate:string|null;
  
 }

@@ -26,6 +26,9 @@ import { AdminComponent } from './admin/admin.component';
 import { AddflightsComponent } from './admin/addflights/addflights.component';
 import { EditflightsComponent } from './admin/editflights/editflights.component';
 import { ViewflightsComponent } from './admin/viewflights/viewflights.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { TicketComponent } from './ticket/ticket.component';
 
 
 
@@ -47,7 +50,10 @@ import { ViewflightsComponent } from './admin/viewflights/viewflights.component'
     AdminComponent,
     AddflightsComponent,
     EditflightsComponent,
-    ViewflightsComponent
+    ViewflightsComponent,
+    ContactComponent,
+    AboutusComponent,
+    TicketComponent
     
   ],
   imports: [

@@ -51,7 +51,7 @@
   ],
   "users": [
     {
-      "email": "nishant@gmail.com",
+      "email_Id": "nishant@gmail.com",
       "password": "123"
     },
     {
@@ -80,14 +80,14 @@
       "amount": "45000",
       "flight": "Indigo",
       "seat": "6A",
-      "email": "nishant@gmail.com"
+      "email_Id": "nishant@gmail.com"
     },
     {
       "amount": "Rs 4000",
       "flight": "1Indigo",
       "seat": "3D",
       "id": 2,
-      "email": "nishant@gmail.com"
+      "email_Id": "nishant@gmail.com"
     },
     {
       "amount": "Rs 4000",
@@ -111,7 +111,7 @@
       "age": "",
       "name": "",
       "id": 7,
-      "email": "nishant@gmail.com"
+      "email_Id": "nishant@gmail.com"
     },
     {
       "amount": "Rs 33000",

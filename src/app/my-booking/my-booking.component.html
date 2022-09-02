@@ -1,4 +1,5 @@
-<h2 style="margin-left: 20px;"><b> MYBOOKING</b></h2>
+<body>
+    <h2 style="margin-left: 20px;"><b> MYBOOKING</b></h2>
  <table class="table" style="margin-top: 50px;">
     
     
@@ -6,16 +7,18 @@
    
         <tr>
             <!-- <th>booking_id</th> -->
-            <th>passengerName</th>
-            <th>seat</th>
-            <th>age</th>
+            <th>Passenger Name</th>
+            <th>Seat</th>
+            <th>Age</th>
+            <th>Journey Date</th>
             <th>Departure</th>
             <th>Arrival</th>
-            <th>flightName</th>
+            <th>Flight Name</th>
             <th>Amount</th>
             <th>Source</th>
             <th>Destination</th>
-            <th>Action</th>
+            <th>Cancel</th>
+            <th>View Ticket</th>
            
         </tr>
     </thead>
@@ -23,10 +26,11 @@
         
         <tr *ngFor="let row of details">
             <!-- <td >{{row.id}}</td> -->
-            <td>{{row.PassengerName}}</td>
+            <td>{{row.passengerName}}</td>
             <td>{{row.seatNo}}</td>
             <td>{{row.age}}</td>
-            <td>{{row.departTime}}</td>
+            <td>{{row.bookingDate}}</td>
+            <td>{{row.departureTime}}</td>
             <td>{{row.arrivalTime}}</td>
             <td>{{row.flightName}}</td>
             <td>{{row.amount}}</td>
@@ -35,6 +39,9 @@
             <td>
                 <button  class="btn btn-danger" style="width:100%;" (click)="cancelTicket(row)">Cancel Ticket</button>
             </td>
+            <td>
+                <button  class="btn btn-danger" style="width:100%;" (click)="viewTicket(row)">View Ticket</button>
+            </td>
 
         </tr>            
     </tbody>
@@ -42,3 +49,5 @@
 
 
 
+
+</body>

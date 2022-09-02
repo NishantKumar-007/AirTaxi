@@ -4,6 +4,7 @@ import { BookingService } from '../booking.service';
 import { StatusService } from '../status.service';
 import { BookingDetails } from './booking-details';
 
+
 @Component({
   selector: 'app-my-booking',
   templateUrl: './my-booking.component.html',
@@ -46,5 +47,13 @@ export class MyBookingComponent implements OnInit {
     this.fetchBooking();
     window.location.reload();
   }
+
+  viewTicket(b:BookingDetails){
+    this.router.navigate(['ticket']);
+    console.log(b.email_Id);
+    // sessionStorage.setItem("ticketId",J);
+  }
+
+ 
 
  }

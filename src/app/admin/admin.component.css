@@ -11,21 +11,17 @@ body{
 	color: #191a1e;
 }
 div{
-    margin-top: 45vh;
-    margin-left: 35%;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 170px;
 }
 .viewflights{
     margin-right: 50px;
-    padding: 15px;
-    width: 20%;
+    padding: 25px;
+    width: 40%;
 }
 .addflights{
     margin-right: 50px;
-    padding: 15px;
-    width: 20%;
-}
-.deleteflights{
-    margin-right: 50px;
-    padding: 15px;
-    width: 20%;
+    padding: 25px;
+    width: 40%;
 }

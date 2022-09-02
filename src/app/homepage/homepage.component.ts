@@ -27,7 +27,7 @@ export class HomepageComponent implements OnInit {
     this.myForm = new FormGroup({
       source :new FormControl(''),
       destination : new FormControl(''),
-      dod :new FormControl(''),
+      doj :new FormControl(''),
       doa : new FormControl(''),
       type : new FormControl('')
 
@@ -49,7 +49,7 @@ export class HomepageComponent implements OnInit {
     }
 
     sessionStorage.setItem("adminlogin","admin@lti");
-    sessionStorage.setItem("adminpass","admin@123")
+    sessionStorage.setItem("adminpass","admin@123");
     
   }
 

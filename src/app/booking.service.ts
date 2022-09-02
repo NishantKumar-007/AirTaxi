@@ -13,6 +13,7 @@ export class BookingService {
 
   //url:string ="http://localhost:3000/BookingDetails";
   url:string ="http://localhost:8085/booking";
+  ticketURL :string = "http://localhost:8085/bookings"
 
   public setBooking(b:BookingDetails):Observable<object>{
     console.log(b);
@@ -29,6 +30,11 @@ export class BookingService {
     console.log()
     return this.http.delete(this.url+'/'+booking_id);
  }
+
+ public getBookingById(booking_id:number):Observable<any>{
+  
+  return this.http.get(this.ticketURL+'/'+booking_id);
+}
 
   
 }

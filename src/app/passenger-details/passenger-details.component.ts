@@ -52,6 +52,8 @@ removeForm(uId: number){
  onSubmit(){
    sessionStorage.setItem("name",this.passarray[0].passengerName);
    sessionStorage.setItem("age",this.passarray[0].age);
+   console.log(sessionStorage.getItem("name"));
+   console.log(sessionStorage.getItem("age"));
   this.router.navigate(['/seat']);
  }
 

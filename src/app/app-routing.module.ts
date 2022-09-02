@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutusComponent } from './aboutus/aboutus.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AddflightsComponent } from './admin/addflights/addflights.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditflightsComponent } from './admin/editflights/editflights.component';
 import { ViewflightsComponent } from './admin/viewflights/viewflights.component';
+import { ContactComponent } from './contact/contact.component';
 import { FlightListComponent } from './flight-list/flight-list.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
@@ -14,6 +16,7 @@ import { PassengerDetailsComponent } from './passenger-details/passenger-details
 import { PaymentPageComponent } from './payment-page/payment-page.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { SeatSelectComponent } from './seat-select/seat-select.component';
+import { TicketComponent } from './ticket/ticket.component';
 
 const routes: Routes = [
 
@@ -29,7 +32,10 @@ const routes: Routes = [
   {path:'admin/Admin',component:AdminComponent},
   {path:'admin/viewflights',component:ViewflightsComponent},
   {path:'admin/addflights',component:AddflightsComponent},
-  {path:'admin/editflights',component:EditflightsComponent}
+  {path:'admin/editflights',component:EditflightsComponent},
+  {path:'contact',component:ContactComponent},
+  {path:'about-us',component:AboutusComponent},
+  {path:'ticket',component:TicketComponent}
 
  
 

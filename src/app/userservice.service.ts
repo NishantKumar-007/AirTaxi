@@ -19,7 +19,7 @@ export class UserserviceService {
    
 // }];
 
- //baseUrl:string= "http://localhost:3000/users";
+//  baseUrl:string= "http://localhost:3000/users";
   baseUrl:string= "http://localhost:8085/user-register";
   constructor(private httpSer :HttpClient) { }
     

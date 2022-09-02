@@ -9,7 +9,7 @@ export class FlightServiceService {
 
   constructor(private http:HttpClient) { }
 
-  //url:string ="http://localhost:3000/flight-details";
+  // url:string ="http://localhost:3000/flight-details";
   url:string ="http://localhost:8085/flight"
   getFlights(){
     return this.http.get<FlightDetails[]>(this.url);

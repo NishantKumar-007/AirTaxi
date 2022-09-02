@@ -22,73 +22,54 @@
                        <option>Ms.</option>
                        <option>Mrs.</option> 
                     </select>
+                    <span class="text-danger" *ngIf="userForm.controls['title'].dirty && userForm.hasError('required','title')">*Title is required</span>
                 </div>  
 
                <div class="form-group" style= "color: #47B5FF;">
                 <label for="firstName">FirstName</label>
                      <input type="text" id="firstName"  class = "form-control" placeholder="Enter Your First Name" formControlName="firstName" required="" >
-                     <div *ngIf="f['firstName'].touched && f['firstName'].invalid" class="alert alert-danger">
-                        <div *ngIf="f['firstName'].errors && f['firstName'].errors['required']">FirstName is required!</div>
-                        <div *ngIf="f['firstName'].errors && f['firstName'].errors['pattern']">Enter alphabets only</div>
-                    </div>
+                     <span class="text-danger" *ngIf="userForm.controls['firstName'].dirty && userForm.hasError('required','firstName')">*First Name is required</span>
                 </div>
                 
                 
                <div class="form-group" style= "color: #47B5FF;">
                 <label for="lastName">LastName</label>
                 <input  class = "form-control" type="text" required="" placeholder="Enter Your Last Name" formControlName="lastName">
-                    <div *ngIf="f['lastName'].touched && f['lastName'].invalid" class="alert alert-danger">
-                        <div *ngIf="f['lastName'].errors && f['lastName'].errors['required']">LastName is required!</div>
-                        <div *ngIf="f['lastName'].errors && f['lastName'].errors['pattern']">Enter alphabets only</div>
-                    </div>
+                <span class="text-danger" *ngIf="userForm.controls['lastName'].dirty && userForm.hasError('required','lastName')">*Last Name is required</span>
                </div>
 
                 <div class="form-group" style= "color: #47B5FF;">
                     <label for="email_Id">Email-Id</label>
                     <input  required class = "form-control" type="email" required placeholder="Enter your Email-Id" formControlName="email_Id" >
-                    <div *ngIf="f['email_Id'].touched && f['email_Id'].invalid" class="alert alert-danger">
-                        <div *ngIf="f['email_Id'].errors && f['email_Id'].errors['email']">Enter proper email id</div>
-                        <div *ngIf="f['email_Id'].errors && f['email_Id'].errors['required']">Email id is required!</div>
-                    </div>
+                    <span class="text-danger" *ngIf="userForm.controls['email_Id'].dirty && userForm.hasError('required','email_Id')">*Email Id is required</span>
                  
                 </div>
 
                 <div class="form-group" style= "color: #47B5FF;">
                     <label for="password">Password</label>
                 
-                    <input  class = "form-control" type="password" required="" placeholder="Enter Your Password" formControlName="password" id="txtPassword" >
-                 
-                    <div *ngIf="f['password'].touched && f['password'].invalid" class="alert alert-danger">
-                        <div *ngIf="f['password'].errors && f['password'].errors['required']">Password is Required!</div>
-                    </div>
+                    <input  minlength="8" class = "form-control" type="password" required="" placeholder="Enter Your Password" formControlName="password" id="txtPassword" >
+                    <span class="text-danger" *ngIf="userForm.controls['password'].dirty && userForm.hasError('required','password')">*Password is required</span>
                 </div>
 
                 <div class="form-group" style= "color: #47B5FF;">
                     <label for="confirmpassword">Confirm Password</label>
-                    <input required="" class = "form-control" type="password"  placeholder="Confirm Your Password"  formControlName="confirmpassword" id="txtConfirmPassword" >
-                
-                    <div *ngIf="f['confirmpassword'].touched && f['confirmpassword'].invalid" class="alert alert-danger">
-                        <div *ngIf="f['confirmpassword'].errors && f['confirmpassword'].errors['required']">Confirm Your Password!</div>
-                       
-                    </div>
+                    <input  minlength="8" required="" class = "form-control" type="password"  placeholder="Confirm Your Password"  formControlName="confirmpassword" id="txtConfirmPassword" >
+                    <span  class="text-danger" *ngIf="userForm.controls['confirmpassword'].dirty && userForm.hasError('required','confirmpassword')">*Password is required</span>
+                    
                 </div>
  
                
                 <div class="form-group" style= "color: #47B5FF;" >
                     <label for="dob">Birthdate</label>
                     <input required="" class = "form-control" type="date" required placeholder="Select Your Birthdate"  formControlName="dob" >
-                    <div *ngIf="f['dob'].touched && f['dob'].invalid" class="alert alert-danger">
-                        <div *ngIf="f['dob'].errors && f['dob'].errors['required']"> DOB is required!</div>
-                    </div>
+                    <span class="text-danger" *ngIf="userForm.controls['dob'].dirty && userForm.hasError('required','dob')">*Date Of Birth is required</span>
                 </div>
 
                 <div class="form-group" style= "color: #47B5FF;">
                     <label for="mobile_No">Mobile Number</label>
                     <input  type="number" maxlength="10" pattern="[7-9]{1}[0-9]{9}" placeholder="Enter Your Phone No" formControlName="mobile_No" >
-                    <div *ngIf="f['mobile_no'].touched && f['mobile_no'].invalid" class="alert alert-danger">
-                        <div *ngIf="f['mobile_no'].errors && f['mobile_no'].errors['required']">mobile_no is required!</div>
-                        <div *ngIf="f['mobile_no'].errors && f['mobile_no'].errors['pattern']">Enter 10 digit no</div>
-                    </div>
+                    <span class="text-danger" *ngIf="userForm.controls['mobile_No'].dirty && userForm.hasError('required','mobile_No')">*Mobile Number is required</span>
              
                 </div>
 

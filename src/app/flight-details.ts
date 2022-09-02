@@ -11,4 +11,5 @@ export class FlightDetails {
      arrivalTime: string;
      departureTime: string;
      capacity:number;
+     doj : string;
 }

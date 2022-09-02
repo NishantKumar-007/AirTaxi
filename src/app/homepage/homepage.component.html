@@ -1,6 +1,7 @@
 
- 
-   <div class="header mt-5 mb-5">
+ <html>
+  <body >
+    <div class="header mt-5 mb-5" style="background-image: url(src\assets\images\airplane.jpg);">
       <h1>Book Your Flight Today </h1>
    </div>
     <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
@@ -28,7 +29,7 @@
       <div class="row">
         <div class="form-group">
           <label for="inputAddress">DATE OF DEPARTURE</label>
-          <input type="date" class="form-control" id="inputAddress" placeholder="DD-MM-YYYY" formControlName="dod">
+          <input type="date" class="form-control" id="inputAddress" placeholder="DD-MM-YYYY" formControlName="doj" >
         </div>
       </div>
       <div class="row">
@@ -69,7 +70,8 @@
         </div>
       </div>
       <div class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-outline-primary btn-lg btn-block position-relative">SEARCH FLIGHTS</button>
+        <button type="submit" class="button" >SEARCH FLIGHTS</button>
+        <!-- <button type="submit" class="btn btn-outline-primary btn-lg btn-block position-relative">SEARCH FLIGHTS</button> -->
       </div>
       
     </form>
@@ -78,4 +80,8 @@
     <!-- ngOnInit() { this.sub = this.route.params.subscribe(params => { this.id = params['id']; }); console.log(this.id); } -->
     
 
+    
+  </body>
+ </html>
+   
   

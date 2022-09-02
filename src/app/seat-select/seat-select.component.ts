@@ -18,16 +18,19 @@ export class SeatSelectComponent implements OnInit {
   }
 
   ngOnInit(): void{
-    
-    let current = sessionStorage.getItem("seatlist");
-    current = JSON.stringify(current);
+    let count :string[]=[];
+    let x=0;
+    // let current = sessionStorage.getItem("seatlist");
+    // current = JSON.stringify(current);
 
 
     let arr = document.getElementsByTagName("label");
     for(var i=0;i<arr.length;i++){
       arr[i].addEventListener("click",function handleclick(this:HTMLElement){
-        console.log(this.innerHTML);
-        sessionStorage.setItem("seat",this.innerHTML);
+        count[x]=this.innerText;
+        x++;
+        sessionStorage.setItem("seat",JSON.stringify(count));
+        console.log(sessionStorage.getItem("seat"));
       })
     }
 

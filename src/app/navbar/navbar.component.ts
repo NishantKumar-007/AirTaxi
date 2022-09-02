@@ -26,6 +26,8 @@ export class NavbarComponent implements OnInit {
   x.style.display= "block";
   let y :any= document.getElementById("login");
   y.style.display= "none";
+  let z :any= document.getElementById("register");
+  z.style.display= "none";
   }
   //this.ngOnInit();
   }
@@ -39,6 +41,8 @@ export class NavbarComponent implements OnInit {
     x.style.display= "none";
     let y :any= document.getElementById("login");
     y.style.display= "block";
+    let z :any= document.getElementById("register");
+    z.style.display= "block";
    
     sessionStorage.clear();
     this.router.navigate(['/']);

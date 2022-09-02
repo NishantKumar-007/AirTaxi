@@ -27,17 +27,19 @@ export class PaymentPageComponent implements OnInit {
       this.details.source = sessionStorage.getItem("source");
       this.details.destination = sessionStorage.getItem("dest");
       this.details.arrivalTime = sessionStorage.getItem("arrivalTime");
-      this.details.departTime = sessionStorage.getItem("departTime");
+      this.details.departureTime = sessionStorage.getItem("departTime");
       this.details.age= sessionStorage.getItem("age");
-      this.details.PassengerName= sessionStorage.getItem("name");
+      this.details.passengerName= sessionStorage.getItem("name");
       this.details.email_Id = sessionStorage.getItem("username");
-      
+      this.details.bookingDate = sessionStorage.getItem("doj");
       alert("Your payment was successful");
 
       this.service.setBooking(this.details).subscribe((data:any)=>{
       alert("record added");
       })
-      this.service.getBooking(this.username).subscribe((data:any)=>{});
+      this.service.getBooking(this.username).subscribe((data:any)=>{
+        console.log(data);
+      });
       this.router.navigate(['/myBooking']);
     }
     else

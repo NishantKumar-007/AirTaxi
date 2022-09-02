@@ -39,7 +39,9 @@ export class FlightListComponent implements OnInit {
     this.rs.getFlights().subscribe((response) => {
       this.flightDetails = response;
       this.searchDetails = this.service.getdata();
-      
+      // this.dod = this.searchDetails.doj;
+      let tempdate :string = this.searchDetails.doj;
+      this.dod = tempdate;
       if(this.searchDetails.type=="Business"){
         this.myvar = "Business"
        
@@ -85,7 +87,7 @@ export class FlightListComponent implements OnInit {
       this.router.navigate(['/login']);
     }
     else{
-      this.msg = document.getElementById("fid")?.textContent;
+      this.msg = document.getElementById("fname")?.textContent;
       this.amount = document.getElementById("price")?.textContent;
       this.source = document.getElementById("fcity")?.textContent;
       this.destination = document.getElementById("tcity")?.textContent;
@@ -98,6 +100,7 @@ export class FlightListComponent implements OnInit {
       sessionStorage.setItem("dest",this.destination);
       sessionStorage.setItem("departTime",this.departTime);
       sessionStorage.setItem("arrivalTime",this.arrivalTime)
+      sessionStorage.setItem("doj",this.dod);
       
       
       this.router.navigate(['passenger']);
